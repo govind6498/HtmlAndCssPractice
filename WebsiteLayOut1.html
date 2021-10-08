@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Website Layout 1</title>
+        <style>
+            body{
+                /* display: flex; */
+                min-height: 100vh;
+                margin: 0;
+                padding: 20px;
+            }
+            .headerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                /* align-content: center; */
+                background:yellowgreen;
+                font-weight: bold;
+                height: 15vh;
+                padding: 10px;
+            }
+            .footerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                background:yellowgreen;
+                font-weight: bold;
+                padding: 10px;
+                height: 15vh;
+            }
+            .mainContainer{
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+            }
+            .mainContentItem{
+            background: deepskyblue;
+            background: beige;
+            height: 55vh;
+            }
+        .sideBarLeftItem{background:white;}
+        .sideBarRightItem{background: #D7E8D4;}
+
+        .sideBarItem{flex: 1 0 0;border: 0px solid green;}
+        .sideBarLeftItem{flex: 3 8px;}
+        .sideBarRightItem{flex: 1 8px;}
+        .mainContentItem{flex: 1 8px;}
+        .sideBarLeftItem{order: 1;}
+        .mainContentItem{order: 2;}
+        .sideBarRightItem{order: 3;}
+        </style>
+    </head>
+    <body>
+        <header class ="headerContainer"><h1>Header</h1></header>  
+        <div class = "mainContainer">
+        <section class="mainContentItem">
+            <article>
+                <h2>Aside</h2>
+            </article> 
+        </section>
+        <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Article</p></div></sideBar>
+        <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Nav</p></div></sideBar>
+    </div>
+        <footer class ="footerContainer">Footer</footer>      
+    </body>
+</html>
